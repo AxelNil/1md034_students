@@ -15,12 +15,13 @@ body {
 }
 
 #Burgers {
+  border: 10px dashed white;
   background-color: black;
   color: white;
 }
 
 #contact {
-
+  border: 10px dashed black;
 }
 
 button {
