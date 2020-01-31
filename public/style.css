@@ -10,13 +10,20 @@ body {
   margin: 0 auto;
 }
 
+#titleText {
+  padding-top: 40pt;
+  position: absolute;
+}
+
 #picture {
-  opacity: 0.8;
+  opacity: 0.6;
   height: 400pt;
   width: 100%;
 }
 
 .title {
+  height: 100%;
+  overflow: hidden;
   margin: 0px 15px;
 }
 
