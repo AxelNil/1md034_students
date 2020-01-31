@@ -3,6 +3,7 @@
 body {
   font-family: arial;
   font-size: 110%;
+  margin: 0 auto;
 }
 
 .Allergy {
@@ -21,4 +22,10 @@ body {
 button:hover {
   background-color: deepSkyBlue;
   cursor: pointer;
+}
+
+table {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
 }
