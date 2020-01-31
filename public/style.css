@@ -1,5 +1,9 @@
 @import 'https://fonts.googleapis.com/css?family=Pacifico|Dosis';
 
+section {
+  padding: 15px;
+}
+
 body {
   font-family: arial;
   font-size: 110%;
@@ -17,6 +21,10 @@ body {
 
 #contact {
 
+}
+
+button {
+  margin: 5px 0px 0px 0px;
 }
 
 button:hover {
