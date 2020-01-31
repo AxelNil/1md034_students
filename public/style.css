@@ -1,13 +1,23 @@
 @import 'https://fonts.googleapis.com/css?family=Pacifico|Dosis';
 
 section {
-  padding: 15px;
+  margin: 0px 15px;
 }
 
 body {
   font-family: arial;
   font-size: 110%;
   margin: 0 auto;
+}
+
+#picture {
+  opacity: 0.8;
+  height: 400pt;
+  width: 100%;
+}
+
+.title {
+  margin: 0px 15px;
 }
 
 .Allergy {
