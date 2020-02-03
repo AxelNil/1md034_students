@@ -29,12 +29,8 @@ let TEB = new menuItem(
     "https://dubaiapartment.com/wp-content/uploads/2017/03/The-most-expensive-burger-in-the-world1.jpeg"
 );
 
-function printBorgor(borgor) {
-    console.log(borgor.itemName + ", " + borgor.itemCalories + " kCal");
-}
+function burgerInfo(burger) {
+    return burger.itemName + ", " + burger.itemCalories + " kCal";
+};
 
-printBorgor(WTM);
-printBorgor(FTL);
-printBorgor(TJR);
-printBorgor(TFB);
-printBorgor(TEB);
+//document.getElementById("myDiv").innerHTML = "Välj en burgare";
