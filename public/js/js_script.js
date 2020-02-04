@@ -4,6 +4,21 @@ var menuItem = function(name, calories, gluten, lactose, image) {
     this.glutenBool = gluten;
     this.lactoseBool = lactose;
     this.picture = image;
+
+    this.info = function burgerInfo() {
+        var description = this.itemName + ", " + this.itemCalories + " kCal";
+
+         if (this.lactoseBool) {
+            description += "\n Contains lactose";
+         }
+            description += "\n Contains gluten";
+
+         if (this.glutenBool) {
+         }
+
+        return description;
+    };
+
 };
 
 let WTM = new menuItem(
@@ -29,9 +44,6 @@ let TEB = new menuItem(
     "https://dubaiapartment.com/wp-content/uploads/2017/03/The-most-expensive-burger-in-the-world1.jpeg"
 );
 
-function burgerInfo(burger) {
-    return burger.itemName + ", " + burger.itemCalories + " kCal";
-};
 
 //document.getElementById("myDiv").innerHTML = "Välj en burgare";
 
@@ -40,3 +52,12 @@ document.getElementById("b2").innerHTML = FTL.itemName;
 document.getElementById("b3").innerHTML = TJR.itemName;
 document.getElementById("b4").innerHTML = TFB.itemName;
 document.getElementById("b5").innerHTML = TEB.itemName;
+
+var menu = [WTM, FTL, TJR, TFB, TEB];
+
+var bs = ["b1", "b2", "b3", "b4", "b5"];
+
+for (var i = 0; i < 5; ++i) {
+
+  document.getElementById(bs[i]).innerHTML = menu[i].info();
+}

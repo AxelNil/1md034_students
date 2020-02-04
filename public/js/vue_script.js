@@ -16,3 +16,10 @@ const vm = new Vue({
     b5 : TEB.itemName,
   }
 })
+
+const vm = new Vue({
+el: '#myID',
+data: {
+  menu
+  }
+})
