@@ -34,3 +34,9 @@ function burgerInfo(burger) {
 };
 
 //document.getElementById("myDiv").innerHTML = "Välj en burgare";
+
+document.getElementById("b1").innerHTML = WTM.itemName;
+document.getElementById("b2").innerHTML = FTL.itemName;
+document.getElementById("b3").innerHTML = TJR.itemName;
+document.getElementById("b4").innerHTML = TFB.itemName;
+document.getElementById("b5").innerHTML = TEB.itemName;
