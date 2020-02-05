@@ -1,30 +1,30 @@
 @import 'https://fonts.googleapis.com/css?family=Pacifico|Dosis';
 
 section {
-  margin: 0px 15px;
+    margin: 0px 15px;
 }
 
 body {
-  font-family: arial;
-  font-size: 110%;
-  margin: 0 auto;
+    font-family: arial;
+    font-size: 110%;
+    margin: 0 auto;
 }
 
 #titleText {
-  padding-top: 40pt;
-  position: absolute;
+    padding-top: 40pt;
+    position: absolute;
 }
 
 #picture {
-  opacity: 0.6;
-  height: 400pt;
-  width: 100%;
+    opacity: 0.6;
+    height: 400pt;
+    width: 100%;
 }
 
 .title {
-  height: 100%;
-  overflow: hidden;
-  margin: 0px 15px;
+    height: 100%;
+    overflow: hidden;
+    margin: 0px 15px;
 }
 
 .Allergy {
@@ -32,22 +32,22 @@ body {
 }
 
 #Burgers {
-  border: 10px dashed white;
-  background-color: black;
-  color: white;
+    border: 10px dashed white;
+    background-color: black;
+    color: white;
 }
 
 #contact {
-  border: 10px dashed black;
+    border: 10px dashed black;
 }
 
 button {
-  margin: 5px 0px 0px 0px;
+    margin: 5px 0px 0px 0px;
 }
 
 button:hover {
-  background-color: deepSkyBlue;
-  cursor: pointer;
+    background-color: deepSkyBlue;
+    cursor: pointer;
 }
 
 table {
@@ -56,37 +56,52 @@ table {
     width: 100%;
 }
 .wrapper {
-     display: grid;
-     grid-gap: 10px;
-     grid-template-columns: 100px 100px 100px;
-     background-color: black;
-     color: #444;
- }
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100px 100px 100px;
+    background-color: black;
+    color: #444;
+}
 
- .box {
-     background-color: black;
-     color: #fff;
-     border-radius: 5px;
-     padding: 20px;
-     font-size: 100%;
+.box {
+    background-color: black;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 100%;
 
- }
+}
 
- .a {
-   text-align: center;
-     grid-column: 1 / span 4;
- }
- .b {
-   text-align: center;
-     grid-column: 5 / span 3;
- }
- .c {
-   text-align: center;
-     grid-column: 8 / span 3;
- }
+.a {
+    text-align: center;
+    grid-column: 1 / span 4;
+}
+.b {
+    text-align: center;
+    grid-column: 5 / span 3;
+}
+.c {
+    text-align: center;
+    grid-column: 8 / span 3;
+}
 
- @media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
     h1 {
         font-size: 6vw;
     }
 }
+
+.column {
+    float: left;
+    width: 20%;
+    height: 80vh;
+    text-align: center;
+}
+
+/* Clear floats after the columns */
+
+/*.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}*/

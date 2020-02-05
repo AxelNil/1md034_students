@@ -2,8 +2,8 @@
 <script src="https://vuejs.org/js/vue.js"></script>
 <html lang="en">
   <head>
-    <script src="js/js_script.js"></script>
-    <script src="js/vue_script.js"></script>
+    <script src="js/js_script.js" defer></script>
+    <script src="js/vue_script.js" defer></script>
     <script src="https://vuejs.org/js/vue.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>VLCNR Burgers</title>
@@ -18,7 +18,17 @@
     <main>
       <section id="Burgers">
         <h2>Choose your burger</h2>
-        <div class="wrapper">
+
+        <div class="row">
+          <div class="column"></div>
+          <div class="column"></div>
+          <div class="column"></div>
+          <div class="column"></div>
+          <div class="column"></div>
+        </div>
+
+
+        <!--  <div class="wrapper">
           <div class="box a">
             <h3>The Way Too Much</h3>
             <img src= "https://cdn-image.foodandwine.com/sites/default/files/whole-hog-burger-fwx.jpg" alt="Huge Burger" title="Way Too Much" width="300" height="300">
@@ -52,7 +62,7 @@
             </ul>
             <p class="Allergy">Gluten free</p>
           </div>
-        </div>
+        </div>  -->
         <p>This is where you may choose which burger to order</p>
 
       </section>

@@ -5,7 +5,7 @@ var menuItem = function(name, calories, gluten, lactose, image) {
     this.lactoseBool = lactose;
     this.picture = image;
 
-    this.info = function burgerInfo() {
+    this.info = function () {
         var description = this.itemName + ", " + this.itemCalories + " kCal";
 
          if (this.lactoseBool) {
@@ -44,10 +44,52 @@ let TEB = new menuItem(
     "https://dubaiapartment.com/wp-content/uploads/2017/03/The-most-expensive-burger-in-the-world1.jpeg"
 );
 
+var menu = [WTM, FTL, TJR, TFB, TEB];
+
+let row = document.getElementsByClassName("column");
+for (var i = 0; i < row.length; i++) {
+    //Name
+    let h3Item = document.createElement("h3");
+    let nameItem = document.createTextNode(menu[i].itemName);
+    h3Item.appendChild(nameItem);
+    row[i].appendChild(h3Item);
+
+    //Image
+    let img = document.createElement("img");
+    img.src = menu[i].picture;
+    img.height = 200;
+    img.width = 210;
+    row[i].appendChild(img);
+
+    //List
+    let listItem = document.createElement("ul");
+
+    let kCalItem = document.createElement("li");
+    let kCal = document.createTextNode(menu[i].itemCalories + " calories");
+
+    let glutenItem = document.createElement("li");
+    let gluten = document.createTextNode("Contains gluten");
+
+    let lactoseItem = document.createElement("li");
+    let lactose = document.createTextNode("Contains lactose");
+
+    kCalItem.appendChild(kCal);
+    listItem.appendChild(kCalItem);
+    if (menu[i].glutenBool) {
+        glutenItem.appendChild(gluten);
+        listItem.appendChild(glutenItem);
+    }
+    if (menu[i].lactoseBool) {
+        lactoseItem.appendChild(lactose);
+        listItem.appendChild(lactoseItem);
+    }
+
+    row[i].appendChild(listItem);
+}
 
 //document.getElementById("myDiv").innerHTML = "Välj en burgare";
 
-document.getElementById("b1").innerHTML = WTM.itemName;
+/*document.getElementById("b1").innerHTML = WTM.itemName;
 document.getElementById("b2").innerHTML = FTL.itemName;
 document.getElementById("b3").innerHTML = TJR.itemName;
 document.getElementById("b4").innerHTML = TFB.itemName;
@@ -60,4 +102,4 @@ var bs = ["b1", "b2", "b3", "b4", "b5"];
 for (var i = 0; i < 5; ++i) {
 
   document.getElementById(bs[i]).innerHTML = menu[i].info();
-}
+}*/
