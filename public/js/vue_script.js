@@ -21,4 +21,20 @@ el: '#myID',
 data: {
   menu
   }
-})*/
+  })*/
+
+const vm = new Vue({
+    el: '#vue',
+    data: {
+        copiedMenu: menu
+    },
+    methods: {
+        hasGluten : function (index) {
+            return this.copiedMenu[index].glutenBool;
+        },
+
+        hasLactose : function (index) {
+            return this.copiedMenu[index].lactoseBool;
+        }
+    }
+});
