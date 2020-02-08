@@ -19,7 +19,28 @@
       <section id="Burgers">
         <h2>Choose your burger</h2>
 
-        <div class="row">
+      <!--  <div id = "vue">
+          <div class="column" v-for="(burger, index) in copiedMenu">
+            <h3>{{burger.itemName}}</h3>
+            <img :src="burger.picture" width="210" height="200">
+            <ul>
+              <li>{{burger.itemCalories}}</li>
+              <li v-if="hasGluten(index)">
+                Contains gluten
+              </li>
+              <li v-else>
+                Gluten free
+              </li>
+              <li v-if="hasLactose(index)">
+                Contains lactose
+              </li>
+              <li v-else>
+                Lactose free
+              </li>
+            </ul>
+        </div> -->
+
+        <div id="row">
           <div class="column"></div>
           <div class="column"></div>
           <div class="column"></div>

@@ -45,7 +45,7 @@ let TEB = new menuItem(
 );
 
 var menu = [WTM, FTL, TJR, TFB, TEB];
-
+/*
 let row = document.getElementsByClassName("column");
 for (var i = 0; i < row.length; i++) {
     //Name
@@ -85,7 +85,7 @@ for (var i = 0; i < row.length; i++) {
     }
 
     row[i].appendChild(listItem);
-}
+} */
 
 //document.getElementById("myDiv").innerHTML = "Välj en burgare";
 
