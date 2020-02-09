@@ -2,6 +2,7 @@
 <script src="https://vuejs.org/js/vue.js"></script>
 <html lang="en">
   <head>
+    <script type="text/javascript" src="js/menu.js"></script>
     <script src="js/js_script.js" defer></script>
     <script src="js/vue_script.js" defer></script>
     <script src="https://vuejs.org/js/vue.js"></script>
@@ -21,10 +22,10 @@
 
         <div id = "vue">
           <div class="column" v-for="(burger, index) in copiedMenu">
-            <h3>{{burger.itemName}}</h3>
-            <img :src="burger.picture" width="210" height="200">
+            <h3>{{burger.name}}</h3>
+            <img :src="burger.img" width="210" height="200">
             <ul>
-              <li>{{burger.itemCalories}}</li>
+              <li>{{burger.kCal}}</li>
               <li v-if="hasGluten(index)">
                 Contains gluten
               </li>

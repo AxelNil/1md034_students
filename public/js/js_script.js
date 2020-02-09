@@ -1,3 +1,5 @@
+
+/*
 var menuItem = function(name, calories, gluten, lactose, image) {
     this.itemName = name;
     this.itemCalories = calories;
@@ -8,13 +10,13 @@ var menuItem = function(name, calories, gluten, lactose, image) {
     this.info = function () {
         var description = this.itemName + ", " + this.itemCalories + " kCal";
 
-         if (this.lactoseBool) {
+        if (this.lactoseBool) {
             description += "\n Contains lactose";
-         }
-            description += "\n Contains gluten";
+        }
+        description += "\n Contains gluten";
 
-         if (this.glutenBool) {
-         }
+        if (this.glutenBool) {
+        }
 
         return description;
     };
@@ -44,7 +46,7 @@ let TEB = new menuItem(
     "https://dubaiapartment.com/wp-content/uploads/2017/03/The-most-expensive-burger-in-the-world1.jpeg"
 );
 
-var menu = [WTM, FTL, TJR, TFB, TEB];
+var menu = [WTM, FTL, TJR, TFB, TEB]; */
 /*
 let row = document.getElementsByClassName("column");
 for (var i = 0; i < row.length; i++) {

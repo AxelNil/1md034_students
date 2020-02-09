@@ -26,15 +26,15 @@ data: {
 const vm = new Vue({
     el: '#vue',
     data: {
-        copiedMenu: menu
+        copiedMenu: food
     },
     methods: {
         hasGluten : function (index) {
-            return this.copiedMenu[index].glutenBool;
+            return this.copiedMenu[index].gluten;
         },
 
         hasLactose : function (index) {
-            return this.copiedMenu[index].lactoseBool;
+            return this.copiedMenu[index].lactose;
         }
     }
 });
