@@ -39,6 +39,7 @@
                 Lactose free
               </li>
             </ul>
+            <input type="checkbox" id=burger v-model="checked[index]">
         </div>
 
         <!--<div id="row">
@@ -93,23 +94,23 @@
         <form>
           <p>
             <label for="name">Full name</label><br>
-            <input type="text" id="name" name="fn" required="required" placeholder="First- and last name"/>
+            <input type="text" v-model="name" id="name" name="fn" required="required" placeholder="First- and last name"/>
           </p>
           <p>
             <label for="email">E-mail</label><br>
-            <input type="email" id="email" name="em" required="required" placeholder="E-mail address" />
+            <input type="email" v-model="email" id="email" name="em" required="required" placeholder="E-mail address" />
           </p>
           <p>
             <label for="street">Street</label><br>
-            <input type="text" id="street" name="sn" required="required" placeholder="Street name">
+            <input type="text" v-model="street" id="street" name="sn" required="required" placeholder="Street name">
           </p>
           <p>
             <label for="house">House</label><br>
-            <input type="number" id="house" name="hs" required="required" placeholder="House number">
+            <input type="number" v-model="house" id="house" name="hs" required="required" placeholder="House number">
           </p>
           <p>
             <label for="payment">Payment options</label><br />
-            <select id="payment" name="rcp">
+            <select v-model="pay" name="rcp">
               <option selected="selected">Credit card</option>
               <option>Cash</option>
               <option>Check</option>
@@ -117,16 +118,22 @@
             </select>
           </p>
           <p>
-            <label for="gender">Gender</label><br>
-            <input type="radio" id="gender" name="m" required="required">Male<br>
-            <input type="radio" id="gender" name="f" required="required">Female<br>
-            <input type="radio" id="gender" name="o" required="required">Other<br>
-            <input checked="checked" type="radio" id="gender" name="p" required="required">Prefer not to say<br>
+            <label v-bind:id="gender" for="gender">Gender</label><br />
+            <input type="radio"  id="male" value="Male" name="gender" required="required" placeholder="gender" v-model="gender">Male<br />
+            <input type="radio" value="Female" id="female" name="gender" required="required" placeholder="gender" v-model="gender">Female<br />
+            <input type="radio" value="Other" id="other" name="gender" required="required" placeholder="gender" v-model="gender">Other<br />
+            <input checked="checked" value="Prefer Not To Say" type="radio" id="prefer not to say" name="gender" required="required" placeholder="gender" v-model="gender">Prefer not to say<br />
           </p>
+
         </form>
+
         <p>This is where you enter your personal information</p>
+
+         <button v-on:click="markDone(name, email, street, house, pay, gender)" id="orderButton" type="submit"><img src="https://superioressaypapers.com/wp-content/uploads/2015/04/place-order.png" alt="Order" width="20">Place your order</button>
+          <p> {{output}}</p>
       </section>
-      <button type="submit"><img src="https://superioressaypapers.com/wp-content/uploads/2015/04/place-order.png" alt="Order" width="20">Place your order</button>
+
+
     </main>
     <footer>
       <hr> <p>Property of the VLCNR holding group</p>

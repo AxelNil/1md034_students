@@ -105,3 +105,32 @@ for (var i = 0; i < 5; ++i) {
 
   document.getElementById(bs[i]).innerHTML = menu[i].info();
 }*/
+
+/*
+let myButton = document.getElementById('orderButton');
+
+
+myButton.addEventListener("click", onClick);
+
+function onClick() {
+    let Name = document.getElementById("name").value;
+    let Email = document.getElementById("email").value;
+    let Street = document.getElementById("street").value;
+    let House = document.getElementById("house").value;
+    let payTemp = document.getElementById("payment");
+    let Payment = payTemp.options[payTemp.selectedIndex].text;
+    let Gender;
+    let temp = document.getElementsByName("gender");
+
+    for (var i = 0; i < temp.length; i++) {
+        if (temp[i].checked) {
+            Gender = temp[i].value;
+            break;
+        }
+    }
+
+    let list = [Name, Email, Street, House, Payment, Gender];
+    console.log(Gender);
+    console.log(list);
+}
+*/
